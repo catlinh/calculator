@@ -1,17 +1,50 @@
+.main{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border: 2px solid black;
+    border-radius:10px;
+    width: 330px;
+    height: 430px;
+    margin:auto;
+    background-color: pink;
+}
+
 .container{
     display:grid;
     grid-template-columns: repeat(4,1fr);
-    align-items:stretch;
-    height:300px;
+    grid-gap:10px;
+    height:400px;
+    width: 300px;
+    align-items: stretch;
+}
+
+.display{
+    grid-column:span 4;
+    border: 2px solid black; 
+    background-color: white;
+    text-align: right;
+    padding-right:5px;
+    border-radius: 10px;
+    padding-top:10px;
+    height:80px;
+}
+
+.equation{
+    font-size:15px;
+    height:15px;
+}
+
+.answer{
+    font-size:45px;
+    height:50px;
 }
 
 .top-row{
     grid-column: span 2;
 }
 
-.container div{
-    border: 1px solid black; 
-    flex:1;
-    display:flex;    
-    flex-direction: column;
+button{
+    background-color: white;
+    border-radius:10px;
 }
